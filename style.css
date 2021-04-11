@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Exo", sans-serif;
+  background-color: whitesmoke;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+h4 {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+    margin-top: 5vh;
+    width: 100%;
+    height: auto;
+    background-color: #3d5c5c;
+    display: inline-block;   
+    font-size: 14px;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;   
+    
+}
+
+footer p {
+    display: inline-block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;   
+    
+}
+
+#footer__a {        
+    font-size: 14px;
+}
+
+.cabecalho {
+  position: fixed;
+  z-index: 1;
+  padding: 0.9vh;
+  background-color: #94b8b8;
+  width: 100%;
+  
+}
+
+.cabecalho__lista {
+  display: flex;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+  padding-inline-start: 0;
+  justify-content: left;
+}
+
+.cabecalho__link {
+  margin: 0 0.7rem 0;
+}
+
+.principal__imagem {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.principal {
+  position: relative;
+  background-color: whitesmoke;
+  top: 3rem;
+}
+
+.principal__imagem__logo {
+  position: absolute;
+  top: 3vh;
+  left: 2.5%;
+  width: 35%;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg)
+    brightness(108%) contrast(102%);
+}
+
+.text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-indent: 1rem;
+  text-align: justify;
+}
+
+.text__h1 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.discography {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-indent: 1rem;
+  text-align: left;
+}
+
+.discography__h1 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.album {
+  float: left;
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+  display: inline;
+  padding: 0.5rem;
+}
+
+.discography__photo {
+  border: 1px solid black;
+  border-radius: 2%;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 321px) {
+  a:link,
+  a:visited {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .principal__imagem__logo {
+    top: 1vh;
+    left: 2.5%;
+    width: 40%;
+  }
+
+  .discography__photo {
+    width: 400px;
+    height: auto;
+  }
+
+  .album {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .discography__photo {
+    width: 300px;
+    height: auto;
+  }
+
+  .album {
+    width: 33%;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .discography__photo {
+    width: 450px;
+    height: auto;
+  }
+
+  .album {
+    width: 25%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
